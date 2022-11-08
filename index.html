@@ -6,26 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <h1>Pokedex</h1>
 
-    <label for="search">Buscar</label>
-    <input type="text" id="search" name="search">
-    <button>Buscar</button>
-
-    <div class="pokemon_card">
-        <p id="pokemon_name">Pikachu</p>
-        <p id="pokemon_id">No. 25</p>
-        <img id="pokemon_img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
-            alt="Imagen ilustrativa de un Pikachu.">
-        <p id="description">Cuanto más potente es la energía eléctrica que genera este Pokémon, más suaves y elásticas
-            se
-            vuelven las bolsas de sus mejillas</p>
-        <p id="pokemon_abilities">Habilidades</p>
+    <div id="loading">
+        <p>Loading...</p>
     </div>
+
+    <div id="pokemon_container" class="container hidden">
+        <!-- <div class="pokemon_card">
+            <p id="pokemon_name">Pikachu</p>
+            <p id="pokemon_id">No. 25</p>
+            <img id="pokemon_img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+                alt="Imagen ilustrativa de un Pikachu.">
+            <p id="weight">Peso: 40</p>
+            <p id="pokemon_abilities">Habilidades</p>
+        </div> -->
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
