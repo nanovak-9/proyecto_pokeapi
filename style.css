@@ -1,3 +1,36 @@
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
 .hidden {
     display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 990px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.pokemon_card {
+    border: solid 1px black;
+    border-radius: 10px;
+    min-width: 150px;
+    max-width: 300px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    text-transform: capitalize;
 }

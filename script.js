@@ -70,3 +70,4 @@ const getData = async () => {
 getData();
 
 
+// evento load y DOMContentLoaded
