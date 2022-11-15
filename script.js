@@ -23,6 +23,7 @@ function printData(poke_info) {
     name.innerHTML = poke_info.name;
     id.innerHTML = "No. " + poke_info.id;
     image.src = poke_info.sprites.front_default;
+    image.alt = "Sprite de " + poke_info.name;
     weight.innerHTML = "Peso: " + kilos + " kg";
     height.innerHTML = "Altura: " + cms + " cm";
     abilities.innerHTML = "Habilidades: " + poke_info.abilities.map(ability => ability.ability.name).join(', ');
@@ -71,3 +72,4 @@ getData();
 
 
 // evento load y DOMContentLoaded
+

@@ -1,5 +1,35 @@
+:root {
+    --primary: rgb(253, 76, 53);
+    --secondary: rgb(71, 71, 71);
+    --background: rgb(240, 240, 240);
+    --white: #fff;
+}
+
 body {
     font-family: 'Kanit', sans-serif;
+    background-color: var(--background);
+}
+
+.header {
+    display: flex;
+    height: 60px;
+    margin-bottom: 25px;
+    align-items: center;
+    background: linear-gradient(60deg, var(--primary) 25ch, transparent 25.15ch);
+}
+
+h1 {
+    color: white;
+}
+
+.icon_header {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    margin: 10px;
+    background-color: var(--white);
+    border-radius: 50px;
+
 }
 
 .hidden {
@@ -25,7 +55,8 @@ body {
 }
 
 .pokemon_card {
-    border: solid 1px black;
+    background-color: white;
+    color: var(--secondary);
     border-radius: 10px;
     min-width: 150px;
     max-width: 300px;
@@ -33,4 +64,12 @@ body {
     margin: 10px;
     text-align: center;
     text-transform: capitalize;
+}
+
+.pokemon_card h2 {
+    background: linear-gradient(60deg, var(--primary) 90%, transparent 90.5%);
+    color: white;
+    position: relative;
+
+
 }
